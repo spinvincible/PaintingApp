@@ -90,10 +90,10 @@ public class PaintingView extends View {
         paint.setStrokeWidth(size);
     }
 
-    public void erasePaint() {
-        paintColor = canvasPaint;
-        paint.setColor(paintColor);
-    }
+//    public void erasePaint() {
+//        paintColor = canvasPaint;
+//        paint.setColor(paintColor);
+//    }
 
     public void makeBackgroundColor(int color) {
         canvasPaint = color;
