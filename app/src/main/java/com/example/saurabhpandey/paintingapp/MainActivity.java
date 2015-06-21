@@ -151,8 +151,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 blueButton.setVisibility(View.GONE);
                 paintingView.changePaintColor(0xff0000ff);
                 break;
-            case (R.id.undo_button):
-                paintingView.erasePaint();
+//            case (R.id.undo_button):
+//                paintingView.erasePaint();
             case (R.id.small_brush_button):
                 smallBrushButton.setVisibility(View.GONE);
                 mediumBrushButton.setVisibility(View.GONE);
