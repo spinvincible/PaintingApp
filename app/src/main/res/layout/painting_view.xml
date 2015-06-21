@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.saurabhpandey.paintingapp.PaintingView
+            android:id="@+id/painting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        </com.example.saurabhpandey.paintingapp.PaintingView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/color_selection_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/color_button_text" />
+
+    <Button
+        android:id="@+id/size_selection_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/color_selection_button"
+        android:layout_toRightOf="@+id/color_selection_button"
+        android:text="@string/size_button_text" />
+
+    <Button
+        android:id="@+id/undo_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="undoButton"
+        android:layout_alignTop="@+id/size_selection_button"
+        android:text="@string/undo_button_text" />
+
+    <Button
+        android:id="@+id/red_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/color_selection_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/red_button" />
+
+    <Button
+        android:id="@+id/yellow_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/red_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/yellow_button" />
+
+    <Button
+        android:id="@+id/blue_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yellow_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/blue_button" />
+
+    <Button
+        android:id="@+id/small_brush_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/size_selection_button"
+        android:layout_alignLeft="@+id/size_selection_button"
+        android:text="@string/small_brush" />
+
+    <Button
+        android:id="@+id/medium_brush_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/small_brush_button"
+        android:layout_alignLeft="@+id/size_selection_button"
+        android:text="@string/medium_brush" />
+
+    <Button
+        android:id="@+id/large_brush_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/medium_brush_button"
+        android:layout_alignLeft="@+id/size_selection_button"
+        android:text="@string/large_brush" />
+</RelativeLayout>
