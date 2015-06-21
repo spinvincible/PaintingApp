@@ -39,16 +39,16 @@
         android:layout_toRightOf="@+id/color_selection_button"
         android:text="@string/size_button_text" />
 
-    <Button
-        android:id="@+id/undo_button"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:onClick="undoButton"
-        android:layout_alignTop="@+id/size_selection_button"
-        android:text="@string/undo_button_text" />
+    <!--<Button-->
+        <!--android:id="@+id/undo_button"-->
+        <!--style="?android:attr/buttonStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:onClick="undoButton"-->
+        <!--android:layout_alignTop="@+id/size_selection_button"-->
+        <!--android:text="@string/undo_button_text" />-->
 
     <Button
         android:id="@+id/red_button"

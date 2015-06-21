@@ -17,7 +17,7 @@ import android.widget.RelativeLayout;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private PaintingView paintingView;
-    private Button undoButton;
+//    private Button undoButton;
     private Button colorButton;
     private Button sizeButton;
     private Button redButton;
@@ -63,7 +63,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void makeButtons() {
-        undoButton = (Button) findViewById(R.id.undo_button);
+//        undoButton = (Button) findViewById(R.id.undo_button);
         colorButton = (Button) findViewById(R.id.color_selection_button);
         sizeButton = (Button) findViewById(R.id.size_selection_button);
         redButton = (Button) findViewById(R.id.red_button);
@@ -73,7 +73,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mediumBrushButton = (Button) findViewById(R.id.medium_brush_button);
         largeBrushButton = (Button) findViewById(R.id.large_brush_button);
         //Set onClick for all buttons
-        undoButton.setOnClickListener(this);
+//        undoButton.setOnClickListener(this);
         colorButton.setOnClickListener(this);
         sizeButton.setOnClickListener(this);
         redButton.setOnClickListener(this);
@@ -174,5 +174,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-   
+
 }
